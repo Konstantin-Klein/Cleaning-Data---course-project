@@ -21,7 +21,7 @@ library(dplyr)
 
 # cleaning memory, setting file system parameters
 rm(list = ls())
-setwd("/Users/KK/Cloud@Mail.Ru/Learning/R/Cleaning\ data")
+setwd("/Users/KK/Cloud@Mail.Ru/Learning/R/Cleaning\ data")  # set your working directory here
 if(!file.exists("./raw"))  dir.create("./raw")
 setwd("./raw")
 
@@ -67,12 +67,8 @@ subjects <- rbind(testSubjects, trainSubjects)
 names(subjects) <- "subject"
 filteredTable$subject <- subjects[,1]
 
-# adding activity variable to the dataset
+# adding activityName variable to the dataset
 activities <- rbind(testActivities, trainActivities)
-# names(activities) <- "activity"
-# filteredTable$activity <- activities[,1]
-
-# adding activity name variable to the dataset
 activityNamesVector <- lookup(activities,activityNames)
 names(activityNamesVector) <- "activityName"
 filteredTable$activityName <- activityNamesVector

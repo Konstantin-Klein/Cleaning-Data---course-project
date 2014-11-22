@@ -1,3 +1,6 @@
+# ------------------------------------------------------------------
+
+# Task for the course project: 
 
 # You should create one R script called run_analysis.R that does the following. 
 # Merges the training and the test sets to create one data set.
@@ -7,9 +10,12 @@
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
  
 
-# install.packages(c("dplyr","xlsx","XML","data.table", "qdap"))
+# read Readme.md and Codebook.md for more info
 
-# library(data.table)
+# ------------------------------------------------------------------
+
+# install.packages(c("dplyr", "qdap"))
+
 library(qdap)
 library(dplyr)
 

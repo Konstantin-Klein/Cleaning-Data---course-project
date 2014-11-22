@@ -35,11 +35,10 @@ The set of variables that were estimated from these signals are:
 mean(): Mean value
 std(): Standard deviation
 
-The data is then 
-
+New Data set
+=================
 
 summarised_tbl is an object of grouped_dt class:
-
 "grouped_dt" "tbl_dt"     "tbl"        "data.table" "data.frame"
 
 The table is grouped by "activityName" and "subject" columns:  

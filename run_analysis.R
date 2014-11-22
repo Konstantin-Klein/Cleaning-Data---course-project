@@ -22,12 +22,13 @@ library(dplyr)
 # cleaning memory, setting file system parameters
 rm(list = ls())
 setwd("/Users/KK/Cloud@Mail.Ru/Learning/R/Cleaning\ data")
+if(!file.exists("./raw"))  dir.create("./raw")
+setwd("./raw")
 
 # downloading and unzipping the data, checking for errors
-#temporarily commented out assuming the Samsung.zip is in the working directory
-
-# fileUrl <-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-# download.file(fileUrl, "Samsung.zip", method = "curl")
+# temporarily commented out assuming Samsung.zip is in the working directory 
+#fileUrl <-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+#download.file(fileUrl, "Samsung.zip", method = "curl")
 
 unzip("Samsung.zip")
 
